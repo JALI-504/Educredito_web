@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    margin-top: 60px; /* Ajusta esto según la altura real de tu navbar */
+  }
+  
+  .row {
+    margin: 0;
+    min-height: calc(100vh - 60px); /* Ajusta esto según la altura real de tu navbar */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+  }
+  
+  .text-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 8rem; /* Ajusta esto según sea necesario */
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .content-wrapper {
+    margin-top: 60px; /* Altura del navbar */
+    padding: 0;
+  }
+  
