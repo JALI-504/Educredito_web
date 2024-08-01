@@ -1,36 +1,63 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container-fluid {
-    padding: 0;
-    margin-top: 60px; /* Ajusta esto según la altura real de tu navbar */
-  }
-  
-  .row {
-    margin: 0;
-    min-height: calc(100vh - 60px); /* Ajusta esto según la altura real de tu navbar */
-    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
-  }
-  
-  .text-white {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 8rem; /* Ajusta esto según sea necesario */
-  }
-  
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
-  
-  .content-wrapper {
-    margin-top: 60px; /* Altura del navbar */
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin-top: 60px; /* Ajusta esto según la altura real de tu navbar */
+}
+
+.row {
+  margin: 0;
+  min-height: calc(100vh - 0px); /* Ajusta esto según la altura real de tu navbar */
+  align-items: top; /* Alinea los elementos verticalmente */
+  margin-top: 10px;
+}
+
+.text-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 8rem; /* Ajusta esto según sea necesario */
+}
+
+.img-fluid {
+  height: auto;
+  margin-top: 0;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 600px; /* Ajusta la altura máxima del carrusel */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+ 
+}
+
+.carousel-item {
+  margin-bottom: 0; /* Elimina el margen inferior de los elementos del carrusel */
+}
+
+.col-md-6 img {
+  margin-bottom: 0; /* Elimina el margen inferior de la imagen */
+}
+
+.custom-carousel {
+  position: relative; /* Asegura que los botones de control se posicionen correctamente */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: 100%; /* Asegura que los controles del carrusel estén centrados verticalmente */
+  transform: translateY(-50%);
+}
+
+.custom-indicators {
+  bottom: -300px; /* Ajusta este valor para mover los botones indicadores hacia abajo */
+}
+
+.custom-indicators button {
+  margin-top: 200px; /* Ajusta este valor para mover los botones indicadores hacia abajo */
+}
