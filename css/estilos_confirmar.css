@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'josefin';
+    src: 
+    url(../fonts/Josefin_Sans/JosefinSans-Regular.ttf),
+    url(../fonts/Josefin_Sans/JosefinSans-Italic.ttf),
+    url(../fonts/Josefin_Sans/JosefinSans-Bold.ttf),
+    url(../fonts/Josefin_Sans/JosefinSans-BoldItalic.ttf),
+    url(../fonts/Josefin_Sans/JosefinSans-Light.ttf),
+    url(../fonts/Josefin_Sans/JosefinSans-LightItalic.ttf),
+    url(../fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+#titulo_vent{
+    color: #2166b3;
+    text-align: center;
+    font-family: 'josefin';
+    font-size: 32px;
+}
+.modalDialogom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+}
+.modalDialogom:target {
+    opacity:1;
+    pointer-events: auto;
+ }
+.modalDialogom > div{
+    width: 700px;
+    height: 360px;
+    position: relative;
+    margin: 15% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.cerrarm{
+    background: #2166b3;
+    font-family: 'josefin';
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.cerrarm:hover { background: #606061; }
+
+.btTxtm {
+    width: 120px;
+    margin-top: 10px;
+    border: solid 1px #54a2f9;
+    color: #ffffff !important;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 50px 10px 50px;
+    text-shadow: 0 -1px 0 #54a2f9;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 1px rgba(31, 48, 48, 0.1) , inset 0 -1px 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 0 1px 0 1px rgba(31, 48, 48, 0.1) , inset 0 -1px 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 0 1px rgba(31, 48, 48, 0.1) , inset 0 -1px 1px 0 rgba(255, 255, 255, 0.1);
+    background: -webkit-linear-gradient(#2166b3 0%, #4c97ea 50%, #4e98eb 51%, #54a2f9 100%);
+    background: -o-linear-gradient(#2166b3 0%, #4c97ea 50%, #4e98eb 51%, #54a2f9 100%);
+    background: linear-gradient(#2166b3 0%, #4c97ea 50%, #4e98eb 51%, #54a2f9 100%);
+}
+
+a{
+  text-decoration:none;  
+}
+#btnsalir{
+     text-align: center;
+}
+
+.btTxtm:hover {border: solid 2px #54a2f9;
+  background: -webkit-linear-gradient(#2166b3 0%, #4c97ea 50%, #4e98eb 51%, #4e98eb 100%);
+  background: -o-linear-gradient(#2166b3 0%, #4c97ea 50%, #4e98eb 51%, #4e98eb 100%);
+  background: linear-gradient(#2166b3 0%, #4c97ea 50%, #4e98eb 51%, #4e98eb 100%);
+}
+.btTxtm:active {
+  background: -webkit-linear-gradient(#688886 0%, #597a7d 50%, #4b6e70 51%, #4b6e70 100%);
+  background: -o-linear-gradient(#688886 0%, #597a7d 50%, #4b6e70 51%, #4b6e70 100%);
+  background: linear-gradient(#688886 0%, #597a7d 50%, #4b6e70 51%, #4b6e70 100%);
+}
+
+#mensaje{
+    padding-top: 25px;
+    margin-bottom: 40px;
+    text-align: justify;
+    font-family: 'josefin';
+    font-size: 20px;
+}
+.logm{
+  margin-top: 63px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+@media screen and (max-width: 815px){
+    #titulo_vent{
+        font-size: 18px;
+    }
+    .modalDialogom > div{
+        width: 270px;
+        height: 140px;
+        position: relative;
+        margin: 15% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        
+    }
+    .logm{
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 255px;
+    }
+    #mensaje{
+        padding-top: 5px;
+        margin-bottom: 10px;
+        text-align: justify;
+        font-family: 'josefin';
+        font-size: 12px;
+    }
+    .btTxtm {
+        width: 80px;
+        margin-top: 10px;
+        padding: 3px 20px 6px 20px;
+        font-size: 12px;
+    }
+    .btTxtm:hover {border: solid 1px #54a2f9;
+      
+    }
+    .cerrarm{
+        display: none;
+    }
+}

@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Spectral', serif;
+    background: url('/images/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.skewnav {
+    display: flex;
+    justify-content: var(--justify);
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--tx-color);
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+.skewlink {
+    color: var(--tx-color);
+    background: var(--sk-color);
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(16, 77, 156);
+    outline: 0;
+    font-size: 1rem;
+    padding: 10px;
+    display: inline-block;
+    transform: skew(-30deg);
+    width: 200px;
+    transition: all .5s ease;
+}
+
+.skewlink:hover {
+    background: var(--hv-color); 
+    color: var(--tx-color);
+    border-radius: 0px 30px 0px 30px;
+    margin: 0 10px;
+}
+
+.skewlink span { 
+    display: inline-block; 
+    transform: skew(30deg); 
+}
+
+.text-white {
+    color: white;
+}
+
+.text-bordered {
+    text-shadow: 0px 6px 18px rebeccapurple;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.skewlink input {
+    padding: 4px 6px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    transform: skew(0deg);
+}
+
+.mt-3 {
+    margin-top: -30px; /* Ajusta este valor según sea necesario */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0;
+    margin-top: 2px; /* Ajusta esto según la altura real de tu navbar */
+}
+
+/* Carrusel Styles */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 350px; /* Ajusta la altura máxima del carrusel */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+
+.carousel-item {
+  margin-bottom: 0; /* Elimina el margen inferior de los elementos del carrusel */
+}
+
+.col-md-6 img {
+  margin-bottom: 0; /* Elimina el margen inferior de la imagen */
+}
+
+.custom-carousel {
+  position: relative; /* Asegura que los botones de control se posicionen correctamente */
+  box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.3); /* Agrega sombra alrededor del carrusel */
+  border-radius: 10px; /* Opcional: Agrega bordes redondeados */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: 60%; /* Asegura que los controles del carrusel estén centrados verticalmente */
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    margin-top: 200px; /* Asegura que los controles del carrusel estén centrados verticalmente */
+    transform: translateY(-50%);
+}
+
+.custom-indicators {
+  bottom: -100px; /* Ajusta este valor para mover los botones indicadores hacia abajo */
+}
+
+.custom-indicators button {
+  margin-top: 200px; /* Ajusta este valor para mover los botones indicadores hacia abajo */
+}
+
+/* Card Styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco con 60% de opacidad */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-body {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.5); /* Añade un efecto de iluminación */
+}
+
+.section-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/finanzas.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5; /* Ajusta la opacidad inicial */
+  z-index: 1;
+}
+
+.section-card .card-body {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0); /* Fondo blanco con opacidad para mejor legibilidad */
+  border-radius: 10px;
+  text-align: left; /* Asegura que el contenido esté centrado */
+  color: #fff;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Estilo para el párrafo en negrita */
+.bold-paragraph {
+  font-weight: bold;
+}
+
+/* Lista personalizada */
+ul.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+ul.custom-list li::before {
+  content: '\2713'; /* Unicode del checkmark */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(0, 132, 255);
+  color: rgb(99, 236, 99);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/********************productos********************************/
+#productos{
+	width: 1277px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+#productos #titu_4{
+	font-family: 'josefin';
+	font-size: 40px;
+	color: #000;
+	padding-top: 50px;
+	text-shadow: 2px 2px 5px #5d5e5e;
+	text-align: center;
+}
+#productos #parrafo{
+	font-family: 'josefin';
+	font-size: 18px;
+	text-align: justify;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#info_produc{
+	width: 725px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+#fidu{
+	width: 100%;
+  	height: auto;
+  	background: url(../images/fidu.jpg) 50% 50% no-repeat;
+  	background-size: cover;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color: #285899;
+}
+#fidu{
+	width: 320px;
+	height: 380px;
+	margin-top: 25px;
+}
+#hipo{
+	width: 100%;
+  	height: auto;
+  	background: url(../images/hipo.jpg) 50% 50% no-repeat;
+  	background-size: cover;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color: #285899;
+}
+#hipo{
+	width: 320px;
+	height: 380px;
+	margin-top: 25px;
+}
+#cont_fidu, #cont_hipo{
+	display: inline-block;
+	vertical-align: top;
+
+}
+#hipo{
+	
+}
+
+#fidu p{
+	width: 290px;
+	text-align: justify;
+	font-family: 'josefin';
+	font-size: 16px;
+	padding-top: 205px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #000;
+}
+#hipo p{
+	width: 290px;
+	text-align: justify;
+	font-family: 'josefin';
+	font-size: 16px;
+	padding-top: 205px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #dfe0e1;
+}
+#titu_prod{
+	text-align: center;
+	font-family: 'josefin';
+	font-size: 22px;
+	text-shadow: 2px 2px 5px #5d5e5e;
+}
+#boton_req{
+	margin-top: 20px;
+	width: 150px;
+	height: 30px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #06ba7d;
+	background-color: #06ba7d;
+	text-align: center;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'josefin';
+	font-size: 18px;
+}
+#cont_fidu a{
+	text-decoration: none;
+	color: #000;
+}
+#cont_hipo a{
+	text-decoration: none;
+	color: #000;
+}
+#cont_hipo{
+	margin-left: 60px;
+}
+#boton_req:hover{
+	background-color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #06ba7d;
+	
+}
+
+/********************fin productos****************************/
+
+.btn-centered {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Custom List Styles */
+
+.section-background {
+  background: url('/images/finanzas.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px 0; /* Ajusta el padding según sea necesario */
+  color: white; /* Ajusta el color del texto para asegurar legibilidad sobre el fondo */
+}
+
+.section-background .card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para mejor legibilidad */
+}
+
+.section-background .card-body {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Asegura que el contenido esté centrado */
+}
+
+/* footer */
+#info_footer {
+  background-color: #333; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  padding: 40px 0; /* Espaciado vertical */
+}
+
+#info_footer a {
+  color: white; /* Links en blanco */
+  text-decoration: none; /* Sin subrayado */
+}
+
+#info_footer a:hover {
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+#info_footer img {
+  margin-right: 10px; /* Espaciado a la derecha de los íconos */
+}
+
+#boton_enviar input[type="submit"] {
+  background-color: #28a745; /* Color del botón */
+  border: none; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Margen */
+  cursor: pointer; /* Cursor de mano */
+  border-radius: 4px; /* Esquinas redondeadas */
+}
+
+#boton_enviar input[type="submit"]:hover {
+  background-color: #218838; /* Color del botón en hover */
+}
+
+/* Lista personalizada */
+/* Lista personalizada */
+ul.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+ul.custom-list li a {
+  color: white; /* Asegurar que los links sean blancos */
+  text-decoration: none; /* Sin subrayado */
+}
+
+ul.custom-list li a:hover {
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Estilo para lista en dos columnas */
+ul.custom-list.two-columns {
+  column-count: 2; /* Número de columnas */
+  column-gap: 90%; /* Espacio entre columnas */
+}
+
+ul.custom-list.two-columns li {
+  break-inside: avoid; /* Evitar que los elementos se rompan entre columnas */
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  padding: 15px 0; /* Espaciado vertical */
+  font-style: italic;
+}
+
+footer #cont_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer #copy,
+footer #aviso,
+footer #desing {
+  margin: 5px 0; /* Margen vertical entre los elementos */
+}
+
+footer #cont_footer div {
+  line-height: 0.5; /* Ajusta el interlineado */
+  margin-bottom: 5px; /* Espacio entre los elementos */
+}
+
+footer a {
+  color: white; /* Links en blanco */
+  text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+
+.custom-hr {
+  border: none; /* Elimina el borde predeterminado */
+  border-top: 1px solid #ccc; /* Agrega un borde superior delgado */
+  margin: 5px 0; /* Espaciado vertical alrededor de la línea */
+}
