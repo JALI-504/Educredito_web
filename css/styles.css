@@ -120,6 +120,8 @@ body {
   margin-top: 200px; /* Ajusta este valor para mover los botones indicadores hacia abajo */
 }
 
+
+
 /* Card Styles */
 .card {
   background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco con 60% de opacidad */
@@ -418,7 +420,7 @@ ul.custom-list li a:hover {
 /* Estilo para lista en dos columnas */
 ul.custom-list.two-columns {
   column-count: 2; /* Número de columnas */
-  column-gap: 90%; /* Espacio entre columnas */
+  column-gap: 5%; /* Espacio entre columnas */
 }
 
 ul.custom-list.two-columns li {
@@ -465,3 +467,48 @@ footer a:hover {
   border-top: 1px solid #ccc; /* Agrega un borde superior delgado */
   margin: 5px 0; /* Espaciado vertical alrededor de la línea */
 }
+
+
+/* Enlaces */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los items dentro del main */
+  flex-direction: row;
+  position: relative;
+  pointer-events: none;
+  white-space: nowrap; /* Previene que el contenido se rompa a la siguiente línea */
+  margin: 0 auto; /* Centra el main en la página */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  margin-top: 0; /* Ajusta o elimina el margen superior si es necesario */
+  
+}
+
+.item {
+  display: inline-block; /* Para que los items se mantengan en línea */
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  position: relative; /* Cambiado de 'center' a 'relative' para permitir la posición */
+}
+
+.item .thumb{
+  width: 170%; /* Ajusta el ancho de la imagen al contenedor */
+  height: 100%; /* Ajusta la altura de la imagen al contenedor */
+  overflow: hidden;
+}
+
+.item .thumb img {
+  width: 50%; /* Ajusta el tamaño de la imagen al contenedor */
+  height: 50%; /* Ajusta la altura de la imagen al contenedor */
+  object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionar */
+}
+
+.item .overlay {
+  width: 100px; /* Ajuste según el tamaño deseado */
+  height: 200px;
+  overflow: hidden;
+}
+
+

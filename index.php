@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Otras etiquetas -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Observer.min.js"></script>
-
 </head>
 
 <body>
@@ -88,12 +82,6 @@
         </div>
     </div>
 
-    <!-- Enlaces de Interes -->
-     <div style="margin-bottom: -100px;">
-        <h2 style="text-align: center; color: aliceblue; font-weight: 600;">Sitios de Interes</h2>
-        <main></main> 
-        <!-- Fin de enlances -->
-    </div>
     <!-- Carrusel -->
     <div class="container mt-4">
         <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-ride="carousel">
@@ -222,10 +210,9 @@
                             </div>
                             <br>
                             <div class="text-center">
-                                <button href="pages/requisitos.php#req_fid" class="btn btn-outline-success">Ver
-                                    Requisitos</button>
+                                <button href="pages/requisitos.php#req_fid" class="btn btn-outline-success">Ver Requisitos</button>
                             </div>
-
+                            
                         </div>
                         <div id="cont_hipo">
                             <div id="titu_prod">
@@ -233,26 +220,24 @@
                             </div>
                             <div id="hipo">
                                 <p>Hipotecario es un crédito garantizado por un bien inmueble o terreno.
-                                    Si el prestatario no cumple con el contrato, la entidad prestamista, EDUCRÉDITO,
-                                    puede vender el
+                                    Si el prestatario no cumple con el contrato, la entidad prestamista, EDUCRÉDITO, puede vender el 
                                     bien hipotecado para recuperar el monto del crédito.
                                 </p>
                             </div>
                             <br>
                             <div class="text-center">
-                                <button href="pages/requisitos.php#req_hipot" class="btn btn-outline-success">Ver
-                                    Requisitos</button>
+                                <button href="pages/requisitos.php#req_hipot" class="btn btn-outline-success">Ver Requisitos</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
     </section>
 
-    <!-- Fin de la seccion cuatro -->
+     <!-- Fin de la seccion cuatro -->
 
-    <!-- Sección cinco -->
-    <section id="cont_med" class="container mt-5">
+       <!-- Sección cinco -->
+       <section id="cont_med" class="container mt-5">
         <div class="card-deck">
             <div class="card section-card">
                 <div class="card-body">
@@ -261,8 +246,7 @@
                             <h4>
                                 Modalidad de los créditos
                             </h4>
-                            <p class="bold-paragraph">Los créditos educativos otorgados por EDUCREDITO tendrán como
-                                finalidad financiar estudios del prestatario en los siguientes rubros.</p>
+                            <p class="bold-paragraph">Los créditos educativos otorgados por EDUCREDITO tendrán como finalidad financiar estudios del prestatario en los siguientes rubros.</p>
                             <div id="info_niveles" class="row">
                                 <div id="col1" class="col-md-6">
                                     <ul class="custom-list">
@@ -293,13 +277,13 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Fin de la seccion cinco -->
 
     <!-- seccion 6 -->
 
-    <!-- seccion 6 -->
-    <section id="info_footer" class="container-fluid bg-dark text-white mt-5 py-4">
+     <!-- seccion 6 -->
+     <section id="info_footer" class="container-fluid bg-dark text-white mt-5 py-4">
         <div id="con_footer" class="row">
             <div id="col1_footer" class="col-md-4">
                 <h5><img src="../images/phone-call.png" alt=""> Teléfono</h5>
@@ -320,17 +304,16 @@
                 <h5><img src="../images/mail.png" alt=""> E·mail</h5>
                 <a href="mailto:info@educredito.gob.hn" target="_top">info@educredito.gob.hn</a>
                 <h5><img src="../images/face.png" alt=""> Facebook</h5>
-                <a href="https://www.facebook.com/profile.php?id=100087402691701"
-                    target="_blank">fb.com/educreditohn</a>
+                <a href="https://www.facebook.com/profile.php?id=100087402691701" target="_blank">fb.com/educreditohn</a>
                 <h5><img src="../images/brochure-folded.png" alt=""> Información</h5>
 
-                <form action="https://formspree.io/f/xkgwzpkg" method="POST" accept-charset="utf-8">
-                    <input type="hidden" name="parameter" value="100">
+                <form  action="https://formspree.io/f/xkgwzpkg" method="POST" accept-charset="utf-8">
+                <input type="hidden" name="parameter" value="100">
                     <input type="email" name="email" placeholder="Ingresa tu Email" required="">
                     <div>
                         <label>
                             Tu Mensaje
-                        </label>
+                          </label>
                     </div>
                     <div>
                         <textarea name="message" placeholder="Ingresa tu mensaje"></textarea>
@@ -338,26 +321,23 @@
                     <div id="boton_enviar" class="mt-2">
                         <input type="submit" value="Enviar" class="btn btn-success">
                     </div>
-                </form>
+                </form>           
 
                 <div>
                     <form action="pages/enviar_info.php" method="post" accept-charset="utf-8">
-                        <input type="hidden" name="parameter" value="100">
-                        <input type="email" name="mail" value="" placeholder="Tu email para enviarte la información"
-                            required="">
-                        <div id="boton_enviar">
-                            <input type="submit" name="" value="Enviar">
-                        </div>
-                    </form>
+						<input type="hidden" name="parameter" value="100">
+						<input type="email" name="mail" value="" placeholder="Tu email para enviarte la información" required="">
+						<div id="boton_enviar">
+							<input type="submit" name="" value="Enviar">
+						</div>
+					</form>
                 </div>
 
             </div>
             <div id="col3_footer" class="col-md-4">
                 <h5>Nuestro Compromiso</h5>
-                <p>Fomentamos la educación con financiamiento educativo para miles de jóvenes que quieren estudiar en
-                    Honduras y en el extranjero.</p>
-                <p>Queremos que todos puedan acceder a la educación nacional e internacional con la que siempre han
-                    soñado.</p>
+                <p>Fomentamos la educación con financiamiento educativo para miles de jóvenes que quieren estudiar en Honduras y en el extranjero.</p>
+                <p>Queremos que todos puedan acceder a la educación nacional e internacional con la que siempre han soñado.</p>
                 <h5>Más sobre Educredito</h5>
                 <ul class="custom-list two-columns">
                     <li><a href="#" class="text-white">Inicio</a></li>
@@ -379,14 +359,13 @@
             <div id="cont_footer">
                 <div id="copy">© Educredito 2024. Todos los derechos reservados.</div>
                 <div id="aviso">
-                    <a href="#" class="text-white">Aviso de privacidad</a>&nbsp;&nbsp;&nbsp;<a href="#"
-                        class="text-white">Atención a Usuarios</a>
+                    <a href="#" class="text-white">Aviso de privacidad</a>&nbsp;&nbsp;&nbsp;<a href="#" class="text-white">Atención a Usuarios</a>
                 </div>
                 <div id="desing">Design by TIC´S Educredito.</div>
             </div>
         </div>
     </footer>
-
+    
     <!-- Fin Footer -->
 
     <script src="js/script.js"></script>
